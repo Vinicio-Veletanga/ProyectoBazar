@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <script type="text/javascript" src="../../admin/validaciones.js"></script>
+</head>
+<body>
+    <header align="center">
+        <h>Creacion de nuevos usuarios</h>
+    </header>
+<section>
+        <form align="center" action="../../config/validacionescumplidas.php" method="POST" onsubmit="return validarCamposObligatorios()">
+            <label id="ced">Cedula (*):</label>
+            <input type="text" id="cedula" name="cedula" placeholder="Ingrese su numero de cedula ..." onblur="validarcedula(this)" onkeypress="return soloNumeros(event);" maxlength="10" />
+            <span id="mensajeCedula"></span><br><br>
+            
+            <label for="nombres">Nombre (*):</label>
+            <input name="custNombres" id="nombres" type="text" placeholder="Ingrese sus dos nombres ..." onkeypress="return soloLetras(event);" onKeyUp="this.value = this.value.toUpperCase();" maxlength="18"/>
+            <span id="mensajeNombre"></span><br><br>
+            
+            <label for="apellidos">Apellido (*):</label>
+            <input name="custApellidos" id="apellidos" type="text" placeholder="Ingrese sus dos apellidos ..." onkeypress="return soloLetras(event);" onKeyUp="this.value = this.value.toUpperCase();" maxlength="18"/>
+            <span id="mensajeApellido"></span><br><br>
+            
+            <label for="direccion">Direccion (*):</label>
+            <input name="custDireccion" id="direccion" type="text" placeholder="Ingrese su dirección ..."/>
+            <span id="mensajeDireccion"></span><br><br>
+            
+            <label for="telefono">Telefono (*):</label>
+            <input name="custTelefono" id="telefono" type="text" placeholder="Ingrese su número telefónico ..." onkeypress="return soloNumeros(event);"/>
+            <span id="mensajeTelefono"></span><br><br>
+    
+            <label for="fecha_nacimiento">Fecha De Nacimiento (*):</label>
+            <input name="custFechaNacimiento" id="fecha_nacimiento" type="text" placeholder="Ingrese su fecha de nacimiento ..." onKeyUp="validarFecha();" maxlength="10"/>
+            <span id="mensajeFecNac"></span><br><br>
+
+            <label for="correo">Email (*):</label>
+            <input name="custCorreo" id="correo" type="text" placeholder="Ingrese su correo electrónico ..." onKeyUp="validarCorreo('correo')"/>
+            <span id="mensajeCorreo"></span><br><br>
+    
+            <label for="contrasena">Contraseña:</label>
+            <input name="custContrasena" id="contrasena" type="password" placeholder="Ingrese su contraseña ..."placeholder="Ingrese su contraseña ..."/>
+            <span id="mensajeContra"></span><br><br>
+    
+            <br>
+            <br>
+            <input class="btn" type="submit" value="Crear">&nbsp;
+            <input class="btn" type="reset" value="Cancelar">
+        </form>
+</section>
+
+
+</body>
+
+</html>
