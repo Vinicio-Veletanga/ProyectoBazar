@@ -7,8 +7,12 @@
     </head>
     <header>
 
-            <p id="espaca"><br></p>
-            <img id="logo" src="Imagenes/logobazar.png" width="800" height="350" />
+            <p id="espaca"></p>
+            <div  id ="logo" style="background:  url('Imagenes/logobazar.png');  background-repeat:no-repeat; background-size: 600px 400px;">
+            <p id="logotipo"></p>         
+            <p id="espaca1">INSUMOS E IMPLEMENTOS PARA CONFECCIÓN DE ROPA</p>
+            </div>  
+            
         </header>
 <body>
         <link rel="stylesheet" type="text/css" href="../../config/Estilobazar.css">
@@ -16,24 +20,16 @@
     <section class="carrusel">
     <div id="CarruselBazar" class="bazarcarrusel" data-wrap="true" data-ride="carousel">
   
-<!--SE CREAN LOS OBJETOS IMAGENES EN LOS ITEM-->
+<!--SE CREAN LOS CONTROLES DE AVEGACION-->
 <form align="center">
         <img src="" id="foto">
-        <br>
+      
         <input type="button" value="Anterior" id="previous" onclick="anterior()">
         <input type="button" value="Iniciar" id="boton" onclick="iniciar()">
         <input type="button" value="Siguiente" id="next" onclick="siguiente()">
     </form>
 </article>
 
-<!--SE CREA LOS CONTROLES DE NAVEGACION DE LAS FOTOS-->
-<div>
-        <p id="espac"></p>
-        <input type="button" value="Anterior" id="previos" onclick="anterior()">
-        <input type="button" value="Iniciar" id="boton" onclick="iniciar()">
-        <input type="button" value="Siguiente" id="next" onclick="siguiente()">
-</div>
-            
         
         </div>  
     </section>
