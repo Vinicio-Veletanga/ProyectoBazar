@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="utf-8" />
+    <title>CrearUsuario</title>
+    <link href="estilos.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="validaciones.js"></script>
+
+
+</head>
+
+<body background="../../f.jpg">
+    <section>
+
+        <header align= "center">
+
+            <h1>Crear Usuarios</h1>
+
+        </header>
+        <form action="../controladores/crear_usuario.php" enctype="multipart/form-data" method="POST" align= "center">
+            <label id="Cedula">Cedula</label>
+            <input type="text" name="cedula" maxlength="10" placeholder="Ingrese su contraseña ..."/>
+            <br>
+            <br>
+            <label for="nombres">Nombre (*):</label>
+            <input name="custNombres" id="nombres" type="text" placeholder="Ingrese sus dos nombres ..." onkeypress="return soloLetras(event);" onKeyUp="this.value = this.value.toUpperCase();" maxlength="18"/>
+            <span id="mensajeNombre"></span>
+            <br>
+            <br>
+            <label for="apellidos">Apellido (*):</label>
+            <input name="custApellidos" id="apellidos" type="text" placeholder="Ingrese sus dos apellidos ..." onkeypress="return soloLetras(event);" onKeyUp="this.value = this.value.toUpperCase();" maxlength="18"/>
+            <span id="mensajeApellido"></span>
+            <br>
+            <br>
+            <label for="direccion">Direccion (*):</label>
+            <input name="custDireccion" id="direccion" type="text" placeholder="Ingrese su dirección ..."/>
+            <span id="mensajeDireccion"></span>
+            <br>
+            <br>
+            <label for="telefono">Telefono (*):</label>
+            <input name="custTelefono" id="telefono" type="text" placeholder="Ingrese su número telefónico ..." onkeypress="return soloNumeros(event);"/>
+            <span id="mensajeTelefono"></span>
+            <br>
+            <br>
+            <label id="Fecha">Fecha</label>
+            <input type="date" name="fecha" placeholder="Ingrese su fecha de nacimiento ..."/>
+            <br>
+            <br>
+            <label id="Correo">Correo</label>
+            <input type="email" name="correo" placeholder="Ingrese su correo electrónico ..."/>
+            <br>
+            <br>
+            <label id="Contrasena">Contraseña</label>
+            <input type="password" name="contrasena" placeholder="Ingrese su contraseña ..."/>
+            <br>
+            <br>
+            <label id="Rol">Rol</label>
+            <label id="Rol2">(User)</label>
+            <input type="checkbox" name="rol2" value="usuario" />
+            <label id="Rol3">(Admin)</label>
+            <input type="checkbox" name="rol3" value="admin" />
+            <br>
+            <br>
+            <label for="imagen">Imagen:</label>
+            <input id="imagen" name="imagen" size="30" type="file" />
+            <br>
+            <div>
+                <input class="btn" id="guargar" name="guardar" type="submit" value="Guardar">&nbsp;
+                <input class="btn" id="borrar" name="borrar" type="Reset" value="Borrar">
+            </div>
+            <a href="login.html">¿Tienes Cuenta?</a>
+            <br>
+            <br>
+        </form>
+        <footer class="inf">
+            Gabriel Leonardo Chuchuca Arevalo &#8226; Universidad Politecnica Salesiana &#8226; <a
+                href="mailto:gchuchucaa@est.ups.edu.ec">gchuchucaa@est.ups.edu.ec</a> &#8226; <a
+                href="tel:+593-969375242">0969375242</a>
+            <br>© Todos los derechos reservados
+        </footer>
+    </section>
+</body>
+
+</html>

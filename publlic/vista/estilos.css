@@ -1,0 +1,51 @@
+.inf{
+    border-style: solid;
+  border-width: 3px;
+  background-color: darkcyan
+}
+.en{
+    border-color: #2079b0;
+
+  }
+  #im{
+    width: 60%;
+    margin-left: 60%;
+  }
+  .ima{
+  width: 50px;
+    height: 50px;
+}
+
+li {
+    float: left;
+    margin-left: 2%;
+    margin-top: 2%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+
+  li a {
+    display: block;
+    padding: 15px;
+    background-color: #dddddd;
+  }
+  a{
+    color: black;
+}
+
+td{
+    background-color: aquamarine}
+.pl{
+    width: 90%;
+    height: 100px;
+}
+
+
+
+
+
+ 
+
+
+
+
+  

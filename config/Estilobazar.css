@@ -1,31 +1,52 @@
 
+#caja {
+    type: text;
+    size: 30px;
+    maxlength: 40px;
+    value: "";
+    name: "buscar";
+     
+}
+#caja:focus {
+    color: white;
+    background-color: darkolivegreen;
+}
 #logo{
-    width: 600px;
-    height: 400px;
+    width: 700px;
+    height: 250px;
     float: left;
 }
 #logotipo{
     width: 600px;
-    height: 200px;
+    height: 150px;
 }
 #espaca1{
     width: 600px;
     height: 25px;
     float: left;
-    font-size: 20px;
-    font-family: serif;
+    font-size: 15px;
+    font: oblique bold 80% cursive;
     text-align: center;
-    color: blue;
+    color:rgb(220, 20, 143);
 }
 header{
     background-color: antiquewhite;
     width: 1900px;
-    height:  450px;
-    
+    height:  300px;
 }
 #espaca{
     width: 600px;
-    height: 300px;
+    height: 250px;
+    float: left;
+}
+#sepind{
+    width: 10px;
+    height: 65px;
+    float: left;
+}
+#espaul{
+    width: 200px;
+    height: 65px;
     float: left;
 }
 #espaca0{
@@ -34,11 +55,42 @@ header{
     float: left;
 }
 
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    border-radius:15px;
+    background-color: rgb(172, 59, 59);
+    text-align: center;
+    opacity: 1;
+    font-size: 20px;
+    
+  }
+  
+  li a:hover { 
+    font-size: 30px;
+    color: black;
+    background-color: rgb(243, 241, 240);
+  }
+  
 
 .menu{
-    background-color: brown;
+    background-color:rgb(240, 233, 233);
     width: 1900px;
-    height: 100px;
+    height: 65px;
 }
 .carrusel{
     background-color: darkseagreen;
@@ -49,7 +101,6 @@ header{
     width: 600px;
     height: 300px;
     float: left;
-  
 }
 #espafo{
     width: 500px;
@@ -63,3 +114,43 @@ header{
     height: 25px;
     border-radius: 40px;
 }
+
+.dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 12px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {background-color: #f1f1f1}
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  .dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+  }
